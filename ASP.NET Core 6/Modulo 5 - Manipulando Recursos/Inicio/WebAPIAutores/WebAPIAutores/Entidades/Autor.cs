@@ -15,19 +15,7 @@ namespace WebAPIAutores.Entidades
         [StringLength(maximumLength: 120, ErrorMessage = "El campo {0} no debe de tener más de {1} carácteres")]
         //[PrimeraLetraMayuscula]
         public string Nombre { get; set; }
-        
-        //[Range(18, 120)]
-        //[NotMapped]
-        //public int Edad { get; set; }
-        //[CreditCard]
-        //[NotMapped]
-        //public string TarjetaDeCredito { get; set; }
-        //[Url]
-        //[NotMapped]
-        //public string URL { get; set; }
-
-        //public int Menor { get; set; }
-        //public int Mayor { get; set; }
+   
 
         public List<Libro> Libros { get; set; }
 
@@ -44,11 +32,7 @@ namespace WebAPIAutores.Entidades
                 }
             }
 
-            //if (Menor > Mayor)
-            //{
-            //    yield return new ValidationResult("Este valor no puede ser más grande que el campo Mayor",
-            //        new string[] { nameof(Menor) });
-            //}
+            
 
         }
     }
